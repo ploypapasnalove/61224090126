@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Test</title>
+<script type = "text/javascript">
+   
+       function ShowPassword() {
+          var my_pwd = document.getElementById('mypwd');
+          var pwd = my_pwd.value;
+
+          var mb_number = document.getElementById('mnb').value;
+          alert ("รหัสผ่าน : "+pwd+" เบอร์โทร : "+mb_number);
+       }
+   
+ </script>    
+</head>
+<body>
+    <form action="/60224090109/test.php" method="post">
+     ชื่อ : <br/>   
+     <input type ="text" name="name"/><br>
+     สีที่ชอบ : <br/>
+     <input type="color" name="myfcolor" value="#0000ff" /><br>
+     ขนาด : <input type="range" name="size" min="1" max="10" /><br/>
+    เบอร์โทร :<br/>
+    <input type="number" id="mnb"name="mobile_number"/><br/>
+    รหัสผ่าน :<br/>
+    <input type="password" id="mypwd" name="pwd"/>
+    </br></br/>
+    <input type="submit" value="ส่งข้อมูล"  />
+    <input type="reset" value="เคลียร์"/>
+    </form>
+</body>
+</html>
